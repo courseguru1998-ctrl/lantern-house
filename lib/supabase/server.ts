@@ -1,6 +1,9 @@
 import {createServerClient} from '@supabase/ssr';
 import {cookies} from 'next/headers';
+import {localMode} from '@/lib/local/mode';
+import {createLocalClient} from '@/lib/local/client';
 export async function createClient(){
+ if(localMode())return createLocalClient() as unknown as ReturnType<typeof createServerClient>;
  const jar=await cookies();
  const url=process.env.NEXT_PUBLIC_SUPABASE_URL,key=process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
  if(!url||!key)throw new Error('Configure Supabase environment variables first.');

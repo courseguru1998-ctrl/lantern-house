@@ -1,6 +1,8 @@
 import {createServerClient} from '@supabase/ssr';
 import {NextResponse,type NextRequest} from 'next/server';
+import {localMode} from '@/lib/local/mode';
 export async function proxy(request:NextRequest){
+ if(localMode())return NextResponse.next();
  const url=process.env.NEXT_PUBLIC_SUPABASE_URL,key=process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
  const pathname=request.nextUrl.pathname,authRoute=pathname==='/login'||pathname.startsWith('/api/auth/');
  const login=()=>{const next=request.nextUrl.clone();next.pathname='/login';next.search='';next.searchParams.set('next',pathname+request.nextUrl.search);return NextResponse.redirect(next);};

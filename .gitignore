@@ -47,3 +47,5 @@ next-env.d.ts
 
 !.env.example
 *.tsbuildinfo
+# Local-mode records and screenshots (LANTERN_LOCAL_MODE=1)
+/.local-data/

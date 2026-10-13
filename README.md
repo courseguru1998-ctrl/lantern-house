@@ -43,6 +43,10 @@ Open `http://localhost:3000`, sign in with the account you created, and enter Wa
 
 If the variables are missing, the app deliberately shows setup instructions instead of exposing the house. Use the Supabase dashboard for account/password recovery. Password-reset email and invitation acceptance pages are not implemented in this handoff.
 
+### Local mode (no Supabase)
+
+To try the full studio on your own computer before Supabase exists, put `LANTERN_LOCAL_MODE=1` in `.env.local` and run `npm run dev`. Sign-in is skipped and records/screenshots are saved to `.local-data/` (gitignored). Local mode only works under `npm run dev`; production builds, including Vercel, ignore it and keep the normal sign-in. Remove the line once your Supabase variables are in place.
+
 ## 3. Put it in your GitHub
 
 Simplest option: make **the contents of `vercel-app/` the root of your new private GitHub repository**. Include `.gitignore`, `.env.example`, `package-lock.json`, `public/`, `viewer/`, `supabase/`, and every other source file. Do not upload `node_modules`, `.next`, `.env.local`, or account secrets.

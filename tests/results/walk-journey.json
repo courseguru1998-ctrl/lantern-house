@@ -1,0 +1,289 @@
+{
+  "routes": [
+    {
+      "id": "arrival",
+      "reachable": true
+    },
+    {
+      "id": "veranda",
+      "reachable": true
+    },
+    {
+      "id": "foyer",
+      "reachable": true
+    },
+    {
+      "id": "living",
+      "reachable": true
+    },
+    {
+      "id": "dining",
+      "reachable": true
+    },
+    {
+      "id": "kitchen",
+      "reachable": true
+    },
+    {
+      "id": "garden",
+      "reachable": true
+    },
+    {
+      "id": "secondary",
+      "reachable": true
+    },
+    {
+      "id": "hall",
+      "reachable": true
+    },
+    {
+      "id": "guest",
+      "reachable": true
+    },
+    {
+      "id": "bedroom",
+      "reachable": true
+    },
+    {
+      "id": "bath",
+      "reachable": true
+    },
+    {
+      "id": "stair",
+      "reachable": true
+    },
+    {
+      "id": "pooja",
+      "reachable": true
+    },
+    {
+      "id": "landing",
+      "reachable": true
+    },
+    {
+      "id": "family",
+      "reachable": true
+    },
+    {
+      "id": "terrace",
+      "reachable": true
+    },
+    {
+      "id": "mezzanine",
+      "reachable": true
+    },
+    {
+      "id": "suitebed",
+      "reachable": true
+    },
+    {
+      "id": "dressing",
+      "reachable": true
+    },
+    {
+      "id": "library",
+      "reachable": true
+    },
+    {
+      "id": "study",
+      "reachable": true
+    },
+    {
+      "id": "suitebath",
+      "reachable": true
+    }
+  ],
+  "journeys": [
+    {
+      "id": "veranda",
+      "frames": 420,
+      "maxVerticalStep": 0,
+      "layer": 0
+    },
+    {
+      "id": "foyer",
+      "frames": 243,
+      "maxVerticalStep": 0,
+      "layer": 0
+    },
+    {
+      "id": "guest",
+      "frames": 227,
+      "maxVerticalStep": 0,
+      "layer": 0
+    },
+    {
+      "id": "bedroom",
+      "frames": 221,
+      "maxVerticalStep": 0,
+      "layer": 0
+    },
+    {
+      "id": "kitchen",
+      "frames": 348,
+      "maxVerticalStep": 0,
+      "layer": 0
+    },
+    {
+      "id": "stair",
+      "frames": 221,
+      "maxVerticalStep": 0,
+      "layer": 0
+    },
+    {
+      "id": "family",
+      "frames": 525,
+      "maxVerticalStep": 0.04328428429435949,
+      "layer": 1
+    },
+    {
+      "id": "mezzanine",
+      "frames": 228,
+      "maxVerticalStep": 0,
+      "layer": 1
+    },
+    {
+      "id": "library",
+      "frames": 393,
+      "maxVerticalStep": 0.07200975164997914,
+      "layer": 2
+    },
+    {
+      "id": "study",
+      "frames": 152,
+      "maxVerticalStep": 0,
+      "layer": 2
+    },
+    {
+      "id": "mezzanine",
+      "frames": 423,
+      "maxVerticalStep": 0.07146124712078361,
+      "layer": 1
+    },
+    {
+      "id": "landing",
+      "frames": 112,
+      "maxVerticalStep": 0,
+      "layer": 1
+    },
+    {
+      "id": "stair",
+      "frames": 482,
+      "maxVerticalStep": 0.044177081945238506,
+      "layer": 0
+    },
+    {
+      "id": "foyer",
+      "frames": 203,
+      "maxVerticalStep": 0,
+      "layer": 0
+    },
+    {
+      "id": "arrival",
+      "frames": 601,
+      "maxVerticalStep": 0,
+      "layer": 0
+    }
+  ],
+  "orientation": [
+    {
+      "id": "foyer",
+      "angle": 0,
+      "dot": 1
+    },
+    {
+      "id": "foyer",
+      "angle": 1.5707963267948966,
+      "dot": 1
+    },
+    {
+      "id": "foyer",
+      "angle": 3.141592653589793,
+      "dot": 1
+    },
+    {
+      "id": "foyer",
+      "angle": -1.5707963267948966,
+      "dot": 1
+    },
+    {
+      "id": "landing",
+      "angle": 0,
+      "dot": 1
+    },
+    {
+      "id": "landing",
+      "angle": 1.5707963267948966,
+      "dot": 1
+    },
+    {
+      "id": "landing",
+      "angle": 3.141592653589793,
+      "dot": 1
+    },
+    {
+      "id": "landing",
+      "angle": -1.5707963267948966,
+      "dot": 1
+    },
+    {
+      "id": "mezzanine",
+      "angle": 0,
+      "dot": 1
+    },
+    {
+      "id": "mezzanine",
+      "angle": 1.5707963267948966,
+      "dot": 1
+    },
+    {
+      "id": "mezzanine",
+      "angle": 3.141592653589793,
+      "dot": 1
+    },
+    {
+      "id": "mezzanine",
+      "angle": -1.5707963267948966,
+      "dot": 1
+    },
+    {
+      "id": "library",
+      "angle": 0,
+      "dot": 1
+    },
+    {
+      "id": "library",
+      "angle": 1.5707963267948966,
+      "dot": 1
+    },
+    {
+      "id": "library",
+      "angle": 3.141592653589793,
+      "dot": 1
+    },
+    {
+      "id": "library",
+      "angle": -1.5707963267948966,
+      "dot": 1
+    }
+  ],
+  "lighting": [
+    {
+      "name": "day",
+      "exposure": 1.12
+    },
+    {
+      "name": "midday",
+      "exposure": 1
+    },
+    {
+      "name": "dusk",
+      "exposure": 1.16
+    },
+    {
+      "name": "evening",
+      "exposure": 1.24
+    }
+  ],
+  "noGPU": true
+}

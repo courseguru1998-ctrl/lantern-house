@@ -1,5 +1,7 @@
 # Lantern House for GitHub + Vercel
 
+**Review walkthrough:** https://courseguru1998-ctrl.github.io/lantern-house/ — the 3D viewer only (walk, floor plans, lighting), published by `.github/workflows/pages.yml` on every push to `main`. GitHub Pages is public and static, so sign-in, notes and saved views are not available there.
+
 ## What this version changes
 
 The architecture, house assets, walkthrough, mezzanine, four lighting modes and presentation UI come from the deployed Edition 05 code. This copy replaces the platform-specific server with standard Next.js and Supabase. It adds email/password sign-in and sign-out. Records remain shared among explicitly approved project members; only their author can update a record's status. The model, plans, API and screenshot storage are private. There is one house/project per installation.

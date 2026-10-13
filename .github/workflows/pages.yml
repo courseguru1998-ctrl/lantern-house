@@ -1,0 +1,35 @@
+name: Deploy walkthrough to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+      # GitHub Pages is static hosting, so only the self-contained 3D viewer is published.
+      # The studio (sign-in, notes, saved views) needs a server; see README for Vercel.
+      - name: Assemble site
+        run: |
+          mkdir _site
+          cp public/viewer.html _site/index.html
+          cp public/*.svg _site/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+      - id: deployment
+        uses: actions/deploy-pages@v4
